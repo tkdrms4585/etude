@@ -1,5 +1,4 @@
 /*
- * 
  * 백준 문제 주소 : https://www.acmicpc.net/problem/2588
  * ++ 1~5자리 무작위 수를 입력해도 결과 출력
  * 
