@@ -1,42 +1,19 @@
-/*
- * 
- * 백준 문제 주소 : https://www.acmicpc.net/problem/2588
- * ++ 1~5자리 무작위 수를 입력해도 결과 출력
- * 
- */
-
 package BackJoon;
 
 import java.util.Scanner;
 
 public class Q2588 {
-	public static void main(String args[]) {
-		int x, y;
-		int total, numCount = 0;
-		int nums[] = new int[5]; // 사용자의 값을 저장하기 위한 배열
-
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		x = sc.nextInt();
-		y = sc.nextInt();
-		total = x * y;
-
-		for (;;) {	// 두번째 사용자 값의 개별화
-			nums[numCount++] = y % 10;
-			y /= 10;
-			if (y == 0)
-				break;
-		}
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = b;
 		
-		int ans[] = new int[numCount+1]; // 정답을 저장하기 위한 배열
-		for (int i = 0; i < numCount; i++) {
-			
-			ans[i] = x * nums[i]; 
-			System.out.printf("%d x %d = %d\n", x, nums[i], ans[i]);
-		}
-		System.out.println(total);
-
-		
-
+		System.out.println(a * (b%10));
+		b /= 10;
+		System.out.println(a * (b%10));
+		b /= 10;
+		System.out.println(a * (b%10));
+		System.out.println(a * c);
 	}
-
 }
