@@ -9,7 +9,7 @@ package BackJoon;
 
 import java.util.Scanner;
 
-public class Q2588Puls {
+public class Q02588Puls {
 	public static void main(String args[]) {
 		int x, y;
 		int total, numCount = 0;
